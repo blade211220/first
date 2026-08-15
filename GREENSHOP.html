@@ -2,30 +2,55 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=500px, height=656px, initial-scale=1.0"
+    />
     <title>Registration</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>Login | Register</h1>
-    <form>
-      <input type="text" id="username" placeholder="Username" required />
+    <h1 style="text-align: center">
+      Login | <span class="clr">Register</span>
+    </h1>
+    <p style="text-align: center">Enter your email and password to register.</p>
+    <form style="text-align: center">
+      <input
+        class="input_dsgn"
+        type="text"
+        id="username"
+        placeholder="Username"
+        required
+      />
       <br />
       <input
+        class="input_dsgn"
         type="email"
         id="email"
         placeholder="Enter your email address"
         required
       />
       <br />
-      <input type="password" id="password" placeholder="Password" required />
+      <input
+        class="input_dsgn"
+        type="password"
+        id="password"
+        placeholder="Password"
+        required
+      />
       <br />
       <input
+        class="input_dsgn"
         type="password"
         id="confirm-password"
         placeholder="Confirm your password"
         required
       />
+      <br />
+      <button class="bt" type="submit">Register</button>
+      <br />
+      Or register with
+      <br />
     </form>
   </body>
 </html>
