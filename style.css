@@ -1,0 +1,27 @@
+:root {
+  --primary-color: rgb(70, 139, 63);
+}
+
+.box span {
+  width: 1000px;
+  height: 53px;
+  margin: 30px 120px;
+}
+
+.active-item {
+  font-weight: bold;
+  border-bottom: 2px solid var(--primary-color);
+}
+
+form {
+  width: 800px;
+  height: 300px;
+  background-color: rgb(219, 214, 209);
+  margin: 50px 200px 0px;
+  padding: 70px 600px 70px 50px;
+}
+body button {
+  color: white;
+  background-color: var(--primary-color);
+  border: 0px;
+}
