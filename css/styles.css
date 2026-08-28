@@ -15,7 +15,7 @@ body {
   margin-bottom: 10px;
 }
 
-.form input {
+.input_dsgn {
   padding-left: 15px;
   width: 290px;
   height: 35px;
@@ -32,7 +32,7 @@ p {
   margin: 10px;
 }
 
-.form button {
+.bt {
   width: 310px;
   height: 50px;
   top: 387px;
@@ -76,19 +76,4 @@ p {
   background-color: var(--primary-color);
   margin: 0 auto;
   margin-top: 20px;
-}
-.box {
-  font-size: 0px;
-  width: 1000px;
-  border: 2px solid black;
-  margin: 0 auto;
-}
-
-.box > span {
-  margin-bottom: 20px;
-  margin-top: 20px;
-  font-size: 16px;
-  width: 300px;
-  display: block;
-  border: 1px solid black;
 }
