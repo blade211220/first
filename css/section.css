@@ -1,0 +1,174 @@
+@font-face {
+  font-family: "Cera Pro";
+  src:
+    url("../Fonts/CeraPro-Regular.woff") format("woff"),
+    url("../Fonts/CeraPro-Regular.eot") format("eot");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Cera Pro";
+  src:
+    url("Fonts/CeraPro-Bold.woff") format("woff"),
+    url("Fonts/CeraPro-Bold.eot") format("eot");
+  font-weight: 700;
+  font-style: normal;
+}
+
+:root {
+  --primary-color: #46a358;
+}
+
+body {
+  font-family: "Cera Pro", sans-serif;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.offers {
+  display: flex;
+  gap: 28px;
+  margin-top: 121px;
+  margin-bottom: 138px;
+}
+
+.offer {
+  width: 586px;
+  height: 302px;
+  background-color: #fbfbfb;
+  display: flex;
+  align-items: center;
+  padding: 0px 30px 10px 0px;
+}
+
+.offer-image img {
+  display: block;
+  width: 289px;
+  height: 287px;
+}
+
+.offer-info {
+  width: 52%;
+  text-align: right;
+  padding-right: 5px;
+}
+
+.offer-title {
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 24px;
+  padding-bottom: 9px;
+  text-transform: uppercase;
+}
+
+.offer-text {
+  font-size: 14px;
+  line-height: 24px;
+  color: #727272;
+  padding-bottom: 25px;
+}
+
+.offer-button {
+  border: none;
+  background-color: var(--primary-color);
+  color: white;
+  font-size: 14px;
+  padding: 11px 28px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.blog {
+  margin-bottom: 50px;
+}
+
+.blog-header {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.blog-title {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 16px;
+  text-transform: uppercase;
+  margin: 0 0 15px 0;
+}
+
+.blog-subtitle {
+  font-size: 14px;
+  line-height: 24px;
+  color: #727272;
+  margin: 0;
+}
+
+.blog-content {
+  display: flex;
+  gap: 43px;
+}
+
+.blog-card {
+  width: 268px;
+  height: 362px;
+  background-color: #fbfbfb;
+}
+
+.blog-image {
+  width: 100%;
+  overflow: hidden;
+}
+
+.blog-image img {
+  width: 268px;
+  height: 195.17391967773438px;
+  display: block;
+}
+
+.blog-info {
+  padding: 9px 13px 12px 13px;
+}
+
+.blog-info-text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding-bottom: 12px;
+}
+
+.blog-date {
+  font-size: 14px;
+  color: var(--primary-color);
+  line-height: 16px;
+  font-weight: 500;
+  margin: 0px 0px 0px 0px;
+}
+
+.blog-card .blog-title {
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 700px;
+  text-transform: uppercase;
+  text-align: left;
+  margin: 0 0px 0 0px;
+}
+
+.blog-text {
+  font-size: 14px;
+  line-height: 22px;
+  color: #727272;
+  margin: 0px 0px 0px 0px;
+}
+
+.blog-link {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+  color: #3d3d3d;
+  margin: 0;
+  cursor: pointer;
+}
