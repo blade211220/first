@@ -1,3 +1,20 @@
+@font-face {
+  font-family: "Cera Pro";
+  src:
+    url("../Fonts/CeraPro-Regular.woff") format("woff"),
+    url("../Fonts/CeraPro-Regular.eot") format("eot");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Cera Pro";
+  src:
+    url("Fonts/CeraPro-Bold.woff") format("woff"),
+    url("Fonts/CeraPro-Bold.eot") format("eot");
+  font-weight: 700;
+  font-style: normal;
+}
+
 :root {
   --primary-color: #46a358;
 }
@@ -12,12 +29,74 @@
   margin-bottom: 12px;
 }
 
-.nav-items-container {
+.list {
   display: flex;
   gap: 50px;
+  position: relative;
+  list-style: none;
 }
-.nav-items-container span {
-  font-family: sans-serif;
+
+.list li {
+  list-style: none;
+}
+
+.list > li {
+  position: relative;
+}
+
+.list > li > ul {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: none;
+  width: 188px;
+  height: auto;
+
+  font-family: "Cera Pro", sans-serif;
+  font-size: 16px;
+  background-color: #edf6ee;
+}
+
+.list > li:hover > ul {
+  display: block;
+}
+
+.list > li > ul > li {
+  position: relative;
+}
+
+.list > li > ul > li > ul {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  display: none;
+  width: 178px;
+  height: 215px;
+  padding: 8px 0px 0px 14px;
+  background-color: #edf6ee;
+  font-family: "Cera Pro", sans-serif;
+  font-size: 16px;
+}
+
+.list > li > ul > li:hover > ul {
+  display: block;
+}
+
+.list ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.list ul a {
+  display: block;
+  padding: 8px 10px;
+  color: #3d3d3d;
+  text-decoration: none;
+}
+
+.list-item {
+  font-family: "Cera-Pro", sans-serif;
   font-size: 16px;
   color: #3d3d3d;
   font-weight: 400;
@@ -25,11 +104,6 @@
   letter-spacing: 0%;
   display: inline-block;
   padding: 15px 0px;
-}
-
-.active-item {
-  font-weight: bold;
-  border-bottom: 2px solid var(--primary-color);
 }
 
 .hero-container {
@@ -119,4 +193,26 @@ section {
   height: 35px;
   font-weight: 500;
   line-height: 100%;
+}
+
+.active-item {
+  border-bottom: 3px solid var(--primary-color);
+  padding-bottom: 12px;
+}
+
+.green-item {
+  background-color: #1a712a;
+  text-transform: uppercase;
+  color: white !important;
+  z-index: 1;
+}
+
+.arrow {
+  width: 6px;
+  height: 10px;
+  position: absolute;
+  top: 12px;
+  bottom: 12px;
+  right: 13px;
+  z-index: 10;
 }

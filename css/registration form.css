@@ -1,3 +1,20 @@
+@font-face {
+  font-family: "Cera Pro";
+  src:
+    url("../Fonts/CeraPro-Regular.woff") format("woff"),
+    url("../Fonts/CeraPro-Regular.eot") format("eot");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Cera Pro";
+  src:
+    url("Fonts/CeraPro-Bold.woff") format("woff"),
+    url("Fonts/CeraPro-Bold.eot") format("eot");
+  font-weight: 700;
+  font-style: normal;
+}
+
 body {
   text-align: center;
 }
@@ -22,7 +39,7 @@ body {
   top: 138px;
   left: 100px;
   font-size: 16px;
-  font-family: "Poppins";
+  font-family: "Cera Pro";
   border: 1px solid #a7a7a7;
   border-radius: 7px;
   margin: 10px;
@@ -40,7 +57,7 @@ p {
   background-color: var(--primary-color);
   border: none;
   border-radius: 7px;
-  font-family: "Poppins";
+  font-family: "Cera Pro";
   font-size: 16px;
   color: white;
   cursor: pointer;
@@ -53,7 +70,7 @@ p {
   top: 387px;
   left: 100px;
   background-color: white;
-  font-family: "Poppins";
+  font-family: "Cera Pro";
   align-items: center;
   justify-content: center;
   font-size: 16px;

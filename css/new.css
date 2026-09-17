@@ -1,5 +1,5 @@
 .box {
   width: 400px;
   height: 200px;
-  background: radial-gradient(#b95252, #e0ce2b, #e02bc2);
+  background-image: url("https://svgl.app/library/clickup.svg");
 }
