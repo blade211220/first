@@ -1,5 +1,31 @@
-.box {
+.container {
+  transition:
+    background-color 1s ease,
+    color 3s linear,
+    opacity 5s ease-in-out;
+  color: blueviolet;
   width: 400px;
   height: 200px;
-  background-image: url("https://svgl.app/library/clickup.svg");
+  background-color: aqua;
+  opacity: 0.8;
+  font-size: 30px;
+}
+
+.container:hover {
+  color: brown;
+  background-color: chartreuse;
+  opacity: 0.5;
+}
+
+.active-item {
+  transition: all 4s ease;
+  color: coral;
+  background-color: chartreuse;
+  font-size: 20px;
+}
+
+.active-item:hover {
+  background-color: aqua;
+  color: blue;
+  font-size: 200px;
 }

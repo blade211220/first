@@ -8,91 +8,117 @@
     <link rel="stylesheet" href="css/normalize.css" />
   </head>
   <body>
-    <nav class="navigation-container container">
-      <img src="картинки/Logo.png" alt="лого" />
-      <ul class="list">
-        <li>
-          <a class="list-item">Home</a>
-        </li>
-        <li>
-          <a class="list-item">Shop</a>
-        </li>
-        <li>
-          <a class="list-item active-item">Plant Care</a>
-          <ul>
-            <li>
-              <a>Drainage</a>
-            </li>
-            <li>
-              <a>Fungicides</a>
-            </li>
-            <li>
-              <a>Fertilizer</a>
-            </li>
-            <li>
-              <img class="arrow" src="картинки/arrow.png" alt="arrow" />
-              <a class="green-item">Priming </a>
-              <ul>
-                <li>
-                  <a>Universal</a>
-                </li>
-                <li>
-                  <a>For Ficus</a>
-                </li>
-                <li>
-                  <a>For Cacti</a>
-                </li>
-                <li>
-                  <a>For Citrus</a>
-                </li>
-                <li>
-                  <a>For those in bloom</a>
-                </li>
-                <li>
-                  <a>For Orchids</a>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </li>
-        <li>
-          <a class="list-item">Blogs</a>
-        </li>
-      </ul>
-      <button
-        class="login-button"
-        type="button"
-        onclick="window.open('registration form.html', '_blank')"
-      >
-        Login
-      </button>
-    </nav>
-    <section>
-      <div class="hero-container">
-        <div class="hero-left-side">
-          <div class="text-container">
-            <h5 class="hero-title">welcome to greenshop</h5>
-            <h1 class="hero-h1">
-              LET'S MAKE A <br />BETTER
-              <span class="primary-color">PLANET</span>
-            </h1>
-            <p class="hero-paragraph">
-              We are an online plant shop offering a wide range of cheap and
-              trendy plants. Use <br />
-              our plants to create an unique Urban Jungle. Order your favoutite
-              plants!
-            </p>
-          </div>
-          <button
-            class="shop-button"
-            type="button"
-            onclick="window.open('catalog.html', '_blank')"
-          >
-            SHOP NOW
-          </button>
+    <section class="features">
+      <div class="feature">
+        <div class="feature-img garden-care"></div>
+        <h3>Garden Care</h3>
+        <p>
+          We are an online plant shop offering a wide range of cheap and trendy
+          plants.
+        </p>
+      </div>
+      <div class="feature">
+        <div class="feature-img plant-renovation"></div>
+        <h3>Plant Renovation</h3>
+        <p>
+          We are an online plant shop offering a wide range of cheap and trendy
+          plants.
+        </p>
+      </div>
+      <div class="feature">
+        <div class="feature-img watering-garden"></div>
+        <h3>Watering Garden</h3>
+        <p>
+          We are an online plant shop offering a wide range of cheap and trendy
+          plants.
+        </p>
+      </div>
+      <div class="newsletter">
+        <h3>Would you like to join newsletters?</h3>
+        <div class="subscribe">
+          <input type="email" placeholder="enter your email address..." />
+          <button>Join</button>
         </div>
-        <img class="image" src="картинки/Frame 1.png" alt="рослина" />
+        <p>
+          We usually post offers and challenges in newsletter. We're your online
+          houseplant destination. We offer a wide range of houseplants and
+          accessories shipped directly from our (green)house to yours!
+        </p>
       </div>
     </section>
+    <footer>
+      <div class="footer-contact">
+        <div class="logo">
+          <div class="logo-icon"></div>
+          <span>GREENSHOP</span>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon location-icon"></div>
+          <span>
+            70 West Buckingham Ave.<br />
+            Farmingdale, NY 11735
+          </span>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon email-icon"></div>
+          <span>contact@greenshop.com</span>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon phone-icon"></div>
+          <span>+88 01911 717 490</span>
+        </div>
+      </div>
+      <div class="footer-links">
+        <div class="footer-column">
+          <h3>My Account</h3>
+          <a class="footer-a" href="#">My Account</a>
+          <a class="footer-a" href="#">Our stores</a>
+          <a class="footer-a" href="#">Contact us</a>
+          <a class="footer-a" href="#">Career</a>
+          <a class="footer-a" href="#">Specials</a>
+        </div>
+        <div class="footer-column">
+          <h3>Help & Guide</h3>
+          <a class="footer-a" href="#">Help Center</a>
+          <a class="footer-a" href="#">How to Buy</a>
+          <a class="footer-a" href="#">Shipping & Delivery</a>
+          <a class="footer-a" href="#">Product Policy</a>
+          <a class="footer-a" href="#">How to Return</a>
+        </div>
+        <div class="footer-column">
+          <h3>Categories</h3>
+          <a class="footer-a" href="#">House Plants</a>
+          <a class="footer-a" href="#">Potter Plants</a>
+          <a class="footer-a" href="#">Seeds</a>
+          <a class="footer-a" href="#">Small Plants</a>
+          <a class="footer-a" href="#">Accessories</a>
+        </div>
+        <div class="footer-column social-column">
+          <h3>Social Media</h3>
+          <div class="socials">
+            <div class="social">
+              <a href="#" class="facebook"></a>
+            </div>
+            <div class="social">
+              <a href="#" class="instagram"></a>
+            </div>
+            <div class="social">
+              <a href="#" class="twitter"></a>
+            </div>
+            <div class="social">
+              <a href="#" class="linkedin"></a>
+            </div>
+            <div class="social">
+              <a href="#" class="youtube"></a>
+            </div>
+          </div>
+          <div class="payment-block">
+            <h3 class="accept-title">We accept</h3>
+            <div class="payments"></div>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">© 2021 GreenShop. All Rights Reserved.</div>
+    </footer>
   </body>
 </html>
