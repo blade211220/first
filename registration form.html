@@ -2,76 +2,65 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Registration</title>
     <link rel="stylesheet" href="css/registration form.css" />
-    <link rel="stylesheet" href="css/normalize.css"/>
+    <link rel="stylesheet" href="css/normalize.css" />
   </head>
   <body>
-    <h2>
-      Login | <span class="color">Register</span>
-    </h2>
-    <p class="enter">Enter your email and password to register.</p>
-    <form>
-      <input
-        class="input_dsgn"
-        type="text"
-        id="username"
-        placeholder="Username"
-        required
-      />
-      <br />
-      <input
-        class="input_dsgn"
-        type="email"
-        id="email"
-        placeholder="Enter your email address"
-        required
-      />
-      <br />
-      <input
-        class="input_dsgn"
-        type="password"
-        id="password"
-        placeholder="Password"
-        required
-      />
-      <br />
-      <input
-        class="input_dsgn"
-        type="password"
-        id="confirm-password"
-        placeholder="Confirm your password"
-        required
-      />
-      <br />
-      <button class="bt" type="submit">Register</button>
-    </br>
-     <p>Or register with</p>
-    </br>
-      <button 
-      class="social_media"
-      type="button">
-        <img
-          src="картинки/google.jpg.jpg"
-          alt="Google"
+    <div class="register-container">
+      <h2>Login | <span class="color">Register</span></h2>
+      <p class="enter">Enter your email and password to register.</p>
+      <form>
+        <input
+          class="input_dsgn"
+          type="text"
+          id="username"
+          placeholder="Username"
+          required
         />
-        <span>Continue with Google</span>
-      </button>
-      </br>
-      <button 
-      class="social_media" 
-      type="button">
-        <img
-          src="картинки/facebook.jpg.jpg"
-          alt="Facebook"
+        <br />
+        <input
+          class="input_dsgn"
+          type="email"
+          id="email"
+          placeholder="Enter your email address"
+          required
         />
-        <span>Continue with Facebook</span>
-      </button>
-    </form>
-    <div class="green"></div>
+        <br />
+        <input
+          class="input_dsgn"
+          type="password"
+          id="password"
+          placeholder="Password"
+          required
+        />
+        <br />
+        <input
+          class="input_dsgn"
+          type="password"
+          id="confirm-password"
+          placeholder="Confirm your password"
+          required
+        />
+        <br />
+        <label class="agreement">
+          <input type="checkbox" required />
+          <span>I agree to all terms and conditions</span>
+        </label>
+        <button class="bt" type="submit">Register</button>
+        <p>Or register with</p>
+        <button class="social_media" type="button">
+          <img src="картинки/google.jpg.jpg" alt="Google" />
+          <span>Continue with Google</span>
+        </button>
+        <br />
+        <button class="social_media" type="button">
+          <img src="картинки/facebook.jpg.jpg" alt="Facebook" />
+          <span>Continue with Facebook</span>
+        </button>
+      </form>
+      <div class="green"></div>
+    </div>
   </body>
 </html>

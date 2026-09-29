@@ -17,6 +17,14 @@
 
 body {
   text-align: center;
+  font-family: "Cera Pro", sans-serif;
+}
+
+.register-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 :root {
@@ -93,4 +101,22 @@ p {
   background-color: var(--primary-color);
   margin: 0 auto;
   margin-top: 20px;
+}
+
+.agreement {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 0;
+  justify-content: center;
+  color: #3d3d3d;
+  font-size: 16px;
+  font-weight: 700px;
+}
+
+.agreement input {
+  width: 15px;
+  height: 15px;
+  margin: 0;
+  cursor: pointer;
 }
