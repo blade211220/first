@@ -318,10 +318,9 @@ section {
 }
 
 .range-input {
-  width: 130px;
+  width: 209px;
   height: 4px;
   margin: 0;
-  accent-color: var(--primary-color);
   cursor: pointer;
   color: var(--primary-color);
   margin-left: 30px;
