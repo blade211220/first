@@ -339,6 +339,31 @@ section {
   font-weight: 700;
 }
 
+.range {
+  appearance: none;
+
+  -webkit-appearance: none;
+
+  width: 209px;
+
+  height: 4px;
+
+  background: #ddd;
+}
+
+/* Chrome / Safari */
+
+.range::-webkit-slider-thumb {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--primary-color);
+  border: none;
+  cursor: pointer;
+}
+
 .filter-button {
   width: 90px;
   height: 35px;
