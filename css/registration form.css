@@ -24,10 +24,6 @@
   }
 }
 
-body {
-  font-family: "Cera Pro", sans-serif;
-}
-
 @keyframes hide-preloader {
   0% {
     opacity: 1;
@@ -41,6 +37,12 @@ body {
     opacity: 0;
     visibility: hidden;
   }
+}
+
+
+
+body {
+  font-family: "Cera Pro", sans-serif;
 }
 
 .register-container {
@@ -168,4 +170,7 @@ body {
   border-top: 5px solid #46a358;
   border-radius: 50%;
   animation: loading 1s linear infinite;
+}
+
+@media (max-width: 600px) {
 }

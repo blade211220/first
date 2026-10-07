@@ -286,11 +286,27 @@ section {
   padding: 15px 15px 25px 15px;
 }
 
-.categories-title {
+.categories details summary {
   font-size: 18px;
   line-height: 16px;
   font-weight: 700;
-  margin: 0 0 18px 0;
+  cursor: pointer;
+  list-style: none;
+  margin-bottom: 18px;
+}
+
+.categories details summary::-webkit-details-marker {
+  display: none;
+}
+
+.categories details summary::after {
+  content: "+";
+  float: right;
+  font-size: 18px;
+}
+
+.categories details[open] summary::after {
+  content: "−";
 }
 
 .category {
@@ -438,6 +454,9 @@ section {
 .tabs {
   display: flex;
   gap: 30px;
+  align-items: center;
+  padding-left: 0;
+  flex: 1;
 }
 
 .tab {
@@ -619,9 +638,13 @@ section {
   margin-bottom: 138px;
 }
 
+#catalog-menu {
+  display: none;
+}
+
 .offer {
   width: 586px;
-  height: 302px;
+
   background-color: #fbfbfb;
   display: flex;
   align-items: center;
@@ -763,7 +786,7 @@ section {
   display: flex;
   gap: 30px;
   justify-content: space-between;
-  padding: 15px 25px 30px;
+  padding: 0 25px 68px;
   background: #fbfbfb;
 }
 
@@ -1036,4 +1059,388 @@ footer {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: left center;
+}
+
+.navigation_image {
+  display: none;
+}
+
+.catalog_image {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .list {
+    display: none;
+  }
+  div.header-icons {
+    display: none;
+  }
+  .primary-button {
+    display: none;
+  }
+  .navigation-container {
+    padding: 10px 8px;
+  }
+  .navigation_image {
+    display: block;
+  }
+  .hero-container {
+    flex-direction: column;
+  }
+  .hero-title {
+    font-size: 20px;
+    letter-spacing: 5%;
+    padding: 0;
+  }
+  .hero-h1 {
+    font-size: 60px;
+    line-height: 60px;
+  }
+  header {
+    height: unset;
+    width: unset;
+  }
+  .hero-left-side {
+    padding: 0;
+  }
+
+  .hero-paragraph {
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .text-container {
+    padding: 10px 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .image {
+    width: 350px;
+    height: 350px;
+    padding: 0;
+  }
+
+  .categories details summary,
+  .price-range h3,
+  .size-block h3 {
+    font-size: 13px;
+  }
+
+  .product-image > img {
+    width: 150px;
+  }
+
+  .product-image {
+    height: 140px;
+    width: 150px;
+  }
+
+  .products-section {
+    display: flex;
+    gap: 0;
+    align-items: flex-start;
+    position: relative;
+  }
+
+  .products-content {
+    width: 100%;
+    min-width: 0;
+    flex: 1;
+  }
+
+  .products-header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .tabs {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .tab {
+    font-size: 13px;
+  }
+
+  .tab.active {
+    font-size: 13px;
+  }
+
+  .sorting {
+    font-size: 11px;
+    gap: 2px;
+    display: block;
+  }
+
+  .sorting select {
+    font-size: 11px;
+    max-width: 70px;
+    display: block;
+  }
+
+  .products-list {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding-right: 20px;
+  }
+
+  .product-card {
+    width: 150px;
+  }
+
+  .sorting {
+    display: none;
+  }
+
+  .sale-item {
+    font-size: 14px;
+    padding: 6px 5px;
+  }
+
+  .product-price {
+    font-size: 13px;
+    line-height: 13px;
+  }
+
+  .old-price {
+    font-size: 13px;
+  }
+
+  .sale-image {
+    display: none;
+  }
+
+  .sale-text {
+    display: none;
+  }
+
+  .sale-discount {
+    display: none;
+  }
+
+  .price-range p,
+  .size-block p,
+  .category {
+    font-size: 13px;
+    padding-left: 18px;
+  }
+
+  .filter-button {
+    font-size: 13px;
+    width: 70px;
+    height: 27px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 18px;
+  }
+
+  .range {
+    width: 98px;
+    height: 3px;
+    margin-left: 16px;
+  }
+
+  .price-range p span {
+    font-size: 13px;
+  }
+
+  .product-name {
+    font-size: 13px;
+    padding-bottom: 8px;
+  }
+
+  .product-info {
+    margin-top: 16px;
+  }
+
+  .page,
+  .page.active {
+    width: 25px;
+    height: 25px;
+    font-size: 16px;
+  }
+
+  .pages {
+    margin-top: 65px;
+    width: 100%;
+  }
+
+  .range::-webkit-slider-thumb {
+    width: 12px;
+    height: 12px;
+  }
+
+  summary {
+    padding-left: 8px;
+  }
+
+  h3 {
+    padding-left: 8px;
+  }
+
+  .offer-image img {
+    width: 182px;
+    height: 180px;
+  }
+
+  .offer-title {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .offers {
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .offer {
+    width: auto;
+    padding-right: 2px;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .offer-info {
+    text-align: center;
+  }
+  .offer-title {
+    padding: 0;
+  }
+
+  .offer-text {
+    padding: 0;
+    font-size: 13px;
+  }
+
+  .offer-button {
+    font-size: 13px;
+    padding: 8px 20px;
+  }
+
+  .blog-main-title {
+    font-size: 24px;
+  }
+
+  .blog-subtitle {
+    font-size: 13px;
+    padding: 0 5px;
+  }
+
+  .blog-content {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .blog-card .blog-title {
+    font-size: 15px;
+  }
+
+  .sale-banner {
+    display: none;
+  }
+
+  .features {
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: unset;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .subscribe {
+    flex-direction: column;
+  }
+
+  .footer-contact {
+    background: linear-gradient(to bottom, #edf6ef, #52c368);
+    flex-direction: column;
+  }
+
+  .feature {
+    width: unset;
+  }
+
+  .feature-img {
+    margin: 0 auto 16px;
+  }
+
+  footer {
+    width: unset;
+  }
+
+  .footer-column {
+    width: unset;
+  }
+
+  .subscribe input {
+    padding: 8px 10px;
+  }
+
+  .newsletter {
+    width: unset;
+  }
+
+  .newsletter p {
+    padding-top: 20px;
+  }
+
+  #catalog-menu {
+    display: none;
+  }
+
+  .catalog_image {
+    display: block;
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+  }
+
+  .left-container {
+    width: 0;
+    height: auto;
+    flex-shrink: 0;
+  }
+
+  .categories {
+    display: none;
+  }
+
+  #catalog-menu:checked ~ .left-container .categories {
+    display: block;
+    position: absolute;
+    top: 45px;
+    left: 0;
+    width: 180px;
+    z-index: 10;
+  }
+
+  .special-image {
+    margin-top: 20px;
+  }
+
+  .special-name {
+    margin-top: 60px;
+  }
+
+  .special-price {
+    margin-top: 10px;
+  }
 }

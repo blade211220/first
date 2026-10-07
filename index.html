@@ -11,7 +11,8 @@
     <!-- main page -->
     <header>
       <nav class="navigation-container">
-        <img src="картинки/Logo.png" alt="лого" />
+        <img src="./картинки/Logo.png" alt="лого" />
+        <img class="navigation_image" src="./icons/menu.svg" />
         <ul class="list">
           <li>
             <a class="list-item">Home</a>
@@ -78,7 +79,8 @@
           <div class="text-container">
             <h5 class="hero-title">welcome to greenshop</h5>
             <h1 class="hero-h1">
-              LET'S MAKE A <br />BETTER
+              LET'S <br />
+              MAKE A <br />BETTER
               <span class="primary-color">PLANET</span>
             </h1>
             <p class="hero-paragraph">
@@ -98,18 +100,21 @@
 
     <main id="catalog" class="main">
       <section class="products-section">
+        <input type="checkbox" id="catalog-menu" />
         <div class="left-container">
           <div class="categories">
-            <h3 class="categories-title">Categories</h3>
-            <p class="category active">House Plants</p>
-            <p class="category">Potter Plants</p>
-            <p class="category">Seeds</p>
-            <p class="category">Small Plants</p>
-            <p class="category">Big Plants</p>
-            <p class="category">Succulents</p>
-            <p class="category">Terrariums</p>
-            <p class="category">Gardening</p>
-            <p class="category">Accessories</p>
+            <details open>
+              <summary>Categories</summary>
+              <p class="category active">House Plants</p>
+              <p class="category">Potter Plants</p>
+              <p class="category">Seeds</p>
+              <p class="category">Small Plants</p>
+              <p class="category">Big Plants</p>
+              <p class="category">Succulents</p>
+              <p class="category">Terrariums</p>
+              <p class="category">Gardening</p>
+              <p class="category">Accessories</p>
+            </details>
             <div class="price-range">
               <h3>Price Range</h3>
               <input
@@ -119,20 +124,20 @@
                 max="1230"
                 value="1230"
               />
-              <p>
+              <p class="catalog_price">
                 Price:
-                <span>$39</span>
+                <span class="active_price">$39</span>
                 -
-                <span>$1230</span>
+                <span class="active_price">$1230</span>
               </p>
               <button class="filter-button">Filter</button>
             </div>
-            <div class="size-block">
-              <h3>Size</h3>
+            <details class="size-block">
+              <summary>Size</summary>
               <p>Small</p>
               <p>Medium</p>
               <p>Large</p>
-            </div>
+            </details>
           </div>
           <div class="sale-banner">
             <div class="sale-text">Super Sale</div>
@@ -146,6 +151,9 @@
         </div>
         <div class="products-content">
           <div class="products-header">
+            <label for="catalog-menu">
+              <img class="catalog_image" src="./icons/menu.svg" alt="Menu" />
+            </label>
             <div class="tabs">
               <p class="tab active">All Plants</p>
               <p class="tab">New Arrivals</p>
@@ -199,15 +207,18 @@
               </div>
             </div>
             <div class="product-card" style="margin-top: -60px">
-              <div class="product-image" style="margin-bottom: -30px">
+              <div
+                class="product-image special-image"
+                style="margin-bottom: -30px"
+              >
                 <img
                   src="картинки/BeachSpiderLily.png"
                   alt="Beach Spider Lily"
                 />
               </div>
               <div class="product-info">
-                <div class="product-name">Beach Spider Lily</div>
-                <div class="product-price">$129.00</div>
+                <div class="product-name special-name">Beach Spider Lily</div>
+                <div class="product-price special-price">$129.00</div>
               </div>
             </div>
             <div class="product-card">
