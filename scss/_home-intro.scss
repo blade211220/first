@@ -1,0 +1,145 @@
+@use "variables" as *;
+
+.home-intro {
+  padding: 60px 60px;
+  padding-bottom: 0;
+  background: $color-main;
+
+  position: relative;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    max-width: 1080px;
+    margin: 0 auto;
+    gap: 60px;
+    background-color: $color-main;
+    position: relative;
+    padding-top: 60px;
+    top: -105px;
+  }
+
+  &__principles {
+    flex: 0 0 40%;
+    padding-right: 40px;
+    border-right: 4px solid $color-text;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__item {
+    font-family: $font-main;
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: $color-text;
+    text-align: right;
+    cursor: pointer;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: $color-accent;
+    }
+
+    &--active {
+      background-image: linear-gradient(to right, $color-accent, #ef8080);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin: 0;
+    }
+  }
+
+  &__content {
+    flex: 1;
+  }
+
+  &__title {
+    margin: 0 0 30px;
+    font-family: $font-main;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 1.25;
+    color: white;
+  }
+
+  &__text {
+    margin: 0;
+    font-family: $font-main;
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 1.58;
+    color: white;
+  }
+}
+
+@media (max-width: 600px) {
+  .home-intro {
+    padding: 30px 20px 50px;
+
+    &__container {
+      flex-direction: column;
+
+      gap: 30px;
+    }
+
+    &__principles {
+      padding: 0 0 20px;
+      border-right: none;
+      border-bottom: 4px solid $color-text;
+      overflow-x: auto;
+    }
+
+    &__list {
+      flex-direction: row;
+      align-items: center;
+      gap: 25px;
+      width: max-content;
+      font-size: 30px;
+    }
+
+    &__item {
+      font-size: 24px;
+      text-align: left;
+      white-space: nowrap;
+    }
+
+    &__title {
+      font-size: 22px;
+      margin-bottom: 20px;
+    }
+
+    &__text {
+      font-size: 16px;
+    }
+  }
+}
+
+@media (min-width: 600px) and (max-width: 1024px) {
+  .home-intro {
+    padding-bottom: 60px;
+
+    &__list {
+    }
+
+    &__container {
+      top: 0;
+    }
+
+    &__content {
+      max-width: 650px;
+      align-items: center;
+    }
+
+    &__principles {
+    }
+  }
+}

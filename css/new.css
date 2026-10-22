@@ -1,21 +1,30 @@
-@media (max-width: 600px) {
-  .container {
-    flex-direction: column;
-  }
-  .block {
-    width: 250px !important;
-    height: 250px !important;
-  }
-}
-.container {
-  display: flex;
-  gap: 15px;
-  height: 100vh;
-  width: 100vw;
+.first_element {
+  background-color: aqua;
 }
 
-.block {
-  width: 50px;
-  height: 50px;
-  background-color: aqua;
+.second_element {
+  background-color: blueviolet;
+}
+
+.third_element {
+  background-color: brown;
+}
+
+.fourth_element {
+  background-color: pink;
+}
+
+.fifth_element {
+  background-color: yellow;
+}
+
+.sixth_element {
+  background-color: black;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 80px);
+  gap: 50px;
 }

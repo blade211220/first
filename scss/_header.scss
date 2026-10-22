@@ -1,0 +1,257 @@
+@use "variables" as *;
+
+.header {
+  padding: 50px 0 0;
+  font-family: $font-main;
+
+  &__container {
+    margin: 0 auto;
+    padding: 0 160px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+    padding-bottom: 60px;
+  }
+
+  &__languages__contact {
+    display: none;
+  }
+
+  &__logo-wrapper {
+    display: flex;
+    align-items: flex-start;
+    gap: 4px;
+  }
+
+  &__logo img {
+    display: block;
+    width: 130px;
+    height: auto;
+  }
+
+  &__slash {
+    display: block;
+    width: 21px;
+    height: 47px;
+  }
+
+  &__section {
+    font-size: 36px;
+    line-height: 100%;
+    color: $color-main;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 16px;
+  }
+
+  &__top {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    font-size: 12px;
+  }
+
+  &__top__tablet {
+    display: none;
+  }
+
+  &__languages {
+    display: flex;
+    gap: 4px;
+  }
+
+  &__language {
+    padding: 5px 7px;
+    border-radius: 8px;
+    color: $color-text;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 12px;
+    transition: background-color 0.2s ease;
+
+    &:hover {
+      background-color: #f5f5fa;
+    }
+
+    &--active {
+      background-color: $color-accent;
+      color: $color-white;
+    }
+  }
+
+  &__address,
+  &__phone {
+    color: $color-text;
+    font-style: normal;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 0;
+  }
+
+  &__phone {
+    font-weight: 700;
+  }
+
+  &__social img {
+    display: block;
+    width: 24px;
+    height: 24px;
+  }
+
+  &__nav {
+    display: flex;
+    gap: 15px;
+    font-size: 16px;
+  }
+
+  &__link {
+    color: #24a3ff;
+    text-decoration: none;
+    font-weight: 700;
+    border-bottom: 2px solid transparent;
+    padding-bottom: 3px;
+    transition:
+      color 0.2s ease,
+      border-color 0.2s ease;
+
+    &:hover {
+      color: $color-accent;
+    }
+
+    &--active {
+      color: $color-accent;
+      border-bottom-color: $color-accent;
+    }
+
+    &__menu {
+      display: none;
+      border: none;
+      background: transparent;
+      cursor: pointer;
+    }
+
+    &__drawer {
+      display: none;
+    }
+  }
+
+  .btn-solid {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .header {
+    &__container {
+      padding: 0 15px;
+      margin: 0;
+    }
+
+    &__slash {
+      width: 12px;
+      height: 26px;
+    }
+
+    &__logo img {
+      width: 69px;
+      height: 32px;
+    }
+
+    &__section {
+      font-size: 20px;
+    }
+
+    &__content {
+      display: none;
+    }
+
+    &__adress-tablet &__languages__contact {
+      display: block;
+      background-color: $color-background;
+      padding: 10px 15px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 0;
+
+    &__menu {
+      display: block;
+    }
+
+    &__top {
+      display: none;
+    }
+
+    &__drawer {
+      display: none;
+    }
+  }
+  .btn-solid {
+    display: none;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 1024px) {
+  .header {
+    &__container {
+      flex-direction: column;
+      padding: 0 0 0 6px;
+      margin: 0;
+    }
+
+    &__languages__contact {
+      display: none;
+    }
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 50px 0 60px 60px;
+    margin: 0;
+
+    &__top {
+      display: none;
+    }
+
+    &__content__tablet {
+      flex-direction: column;
+      display: flex;
+
+      gap: 18px;
+      font-size: 12px;
+    }
+
+    &__top__tablet {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      font-size: 12px;
+    }
+
+    &__address__tablet,
+    &__phone__tablet {
+      color: $color-text;
+      font-style: normal;
+      text-decoration: none;
+      font-size: 16px;
+      margin: 0;
+    }
+
+    &__drawer {
+      display: block;
+    }
+  }
+
+  .btn-solid {
+    display: block;
+  }
+}

@@ -1,0 +1,155 @@
+@use "variables" as *;
+
+.services {
+  padding: 0 160px 60px 160px;
+  background-color: $color-main;
+  margin: 0 auto;
+
+  &__card-block {
+    display: flex;
+    align-items: center;
+  }
+
+  &__container {
+    max-width: $max-width-container;
+    margin: 0 auto;
+  }
+
+  &__heading {
+    padding-bottom: 60px;
+  }
+
+  &__label {
+    padding-bottom: 10px;
+    color: $regular-blue;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 100%;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+
+    &:hover {
+      color: $color-accent;
+    }
+  }
+
+  &__title {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    color: $color-white;
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 100%;
+    cursor: pointer;
+
+    &:hover {
+      color: $color-accent;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 60px 0;
+  }
+
+  &__card {
+    box-sizing: border-box;
+    max-width: 400px;
+  }
+
+  &__image {
+    width: 92px;
+    height: 92px;
+    background-color: white;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__card-title {
+    padding: 30px 0 15px 0;
+    color: $regular-blue;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 100%;
+  }
+
+  &__text {
+    margin: 0;
+    color: $color-white;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 1024px) {
+  .services {
+    padding: 50px 30px;
+
+    &__heading {
+      padding-bottom: 60px;
+    }
+
+    &__title {
+      font-size: 32px;
+    }
+
+    &__list {
+      row-gap: 45px;
+    }
+
+    &__card {
+      max-width: 261px;
+    }
+
+    &__icon {
+      padding-bottom: 20px;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .services {
+    padding: 30px 15px 40px;
+
+    &__heading {
+      padding-bottom: 30px;
+    }
+
+    &__title {
+      font-size: 30px;
+    }
+
+    &__list {
+      margin: 0;
+      row-gap: 30px;
+    }
+
+    &__card {
+      max-width: 290px;
+      padding: 0;
+    }
+
+    &__icon {
+      width: 64px;
+      height: 64px;
+      padding-bottom: 20px;
+    }
+
+    &__card-title {
+      padding-bottom: 10px;
+      font-size: 18px;
+    }
+
+    &__text {
+      font-size: 16px;
+      line-height: 1.5;
+    }
+  }
+}

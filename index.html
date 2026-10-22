@@ -3,542 +3,514 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="./css/styles.css" />
-    <!-- <link rel="stylesheet" href="/css/normalize.css" /> -->
+    <title>HLegal — About Us & Home</title>
+
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./scss/style.css" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe"
+      crossorigin="anonymous"
+    />
   </head>
+
   <body>
-    <!-- main page -->
-    <header>
-      <nav class="navigation-container">
-        <img src="./картинки/Logo.png" alt="лого" />
-        <img class="navigation_image" src="./icons/menu.svg" />
-        <ul class="list">
-          <li>
-            <a class="list-item">Home</a>
-          </li>
-          <li>
-            <a class="list-item">Shop</a>
-          </li>
-          <li>
-            <a class="list-item active-item">Plant Care</a>
-            <ul>
-              <li>
-                <a>Drainage</a>
-              </li>
-              <li>
-                <a>Fungicides</a>
-              </li>
-              <li>
-                <a>Fertilizer</a>
-              </li>
-              <li>
-                <img class="arrow" src="картинки/arrow.png" alt="arrow" />
-                <a class="green-item">Priming </a>
-                <ul>
-                  <li>
-                    <a>Universal</a>
-                  </li>
-                  <li>
-                    <a>For Ficus</a>
-                  </li>
-                  <li>
-                    <a>For Cacti</a>
-                  </li>
-                  <li>
-                    <a>For Citrus</a>
-                  </li>
-                  <li>
-                    <a>For those in bloom</a>
-                  </li>
-                  <li>
-                    <a>For Orchids</a>
-                  </li>
-                </ul>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <a class="list-item">Blogs</a>
-          </li>
-        </ul>
-        <div class="header-icons">
-          <div class="header-search"></div>
-          <div class="header-full-cart"></div>
-        </div>
-        <button
-          class="primary-button"
-          type="button"
-          onclick="window.open('registration form.html', '_blank')"
-        >
-          Login
-        </button>
-      </nav>
-      <div class="hero-container">
-        <div class="hero-left-side">
-          <div class="text-container">
-            <h5 class="hero-title">welcome to greenshop</h5>
-            <h1 class="hero-h1">
-              LET'S <br />
-              MAKE A <br />BETTER
-              <span class="primary-color">PLANET</span>
-            </h1>
-            <p class="hero-paragraph">
-              We are an online plant shop offering a wide range of cheap and
-              trendy plants. Use <br />
-              our plants to create an unique Urban Jungle. Order your favoutite
-              plants!
-            </p>
+    <main class="main">
+      <!-- HEADER -->
+      <header class="home-page__header">
+        <div class="home-page__header-languages-contact">
+          <div class="home-page__header-languages-mobile">
+            <a class="home-page__header-language" href="#">УК</a>
+            <a class="home-page__header-language" href="#">РУ</a>
+            <a
+              class="home-page__header-language home-page__header-language--active"
+              href="#"
+              >EN</a
+            >
           </div>
-          <a class="primary-button" type="button" href="#catalog"> SHOP NOW </a>
-        </div>
-        <img class="image" src="картинки/Frame 1.png" alt="рослина" />
-      </div>
-    </header>
 
-    <!-- catalog -->
-
-    <main id="catalog" class="main">
-      <section class="products-section">
-        <input type="checkbox" id="catalog-menu" />
-        <div class="left-container">
-          <div class="categories">
-            <details open>
-              <summary>Categories</summary>
-              <p class="category active">House Plants</p>
-              <p class="category">Potter Plants</p>
-              <p class="category">Seeds</p>
-              <p class="category">Small Plants</p>
-              <p class="category">Big Plants</p>
-              <p class="category">Succulents</p>
-              <p class="category">Terrariums</p>
-              <p class="category">Gardening</p>
-              <p class="category">Accessories</p>
-            </details>
-            <div class="price-range">
-              <h3>Price Range</h3>
-              <input
-                class="range"
-                type="range"
-                min="39"
-                max="1230"
-                value="1230"
-              />
-              <p class="catalog_price">
-                Price:
-                <span class="active_price">$39</span>
-                -
-                <span class="active_price">$1230</span>
-              </p>
-              <button class="filter-button">Filter</button>
-            </div>
-            <details class="size-block">
-              <summary>Size</summary>
-              <p>Small</p>
-              <p>Medium</p>
-              <p>Large</p>
-            </details>
-          </div>
-          <div class="sale-banner">
-            <div class="sale-text">Super Sale</div>
-            <div class="sale-discount">up to 75% off</div>
-            <img
-              src="картинки/saleplant.png"
-              alt="Sale plant"
-              class="sale-image"
-            />
-          </div>
+          <a class="home-page__header-phone" href="tel:0800211927">
+            0800 211 927
+          </a>
         </div>
-        <div class="products-content">
-          <div class="products-header">
-            <label for="catalog-menu">
-              <img class="catalog_image" src="./icons/menu.svg" alt="Menu" />
-            </label>
-            <div class="tabs">
-              <p class="tab active">All Plants</p>
-              <p class="tab">New Arrivals</p>
-              <p class="tab">Sale</p>
-            </div>
-            <div class="sorting">
-              <span> Short by: </span>
-              <select>
-                <option>Default sorting</option>
-              </select>
-            </div>
-          </div>
-          <div class="products-list">
-            <div class="product-card">
-              <div class="product-image">
-                <img src="картинки/BarbertonDaisy.png" alt="Barberton Daisy" />
-              </div>
-              <div class="product-info">
-                <div class="product-name">Barberton Daisy</div>
-                <div class="product-price">$119.00</div>
-              </div>
-            </div>
-            <div class="product-card border-green active-items-container">
-              <div class="product-image">
-                <img
-                  src="картинки/AngelWingBegonia.png"
-                  alt="Angel Wing Begonia"
-                />
-                <div class="active-items-row">
-                  <img class="cart" src="картинки/item1.png" />
-                  <img class="heart" src="картинки/item2.png" />
-                  <img class="search" src="картинки/item3.png" />
-                </div>
-              </div>
-              <div class="product-info">
-                <div class="product-name">Angel Wing Begonia</div>
-                <div class="product-price">$169.00</div>
-              </div>
-            </div>
-            <div class="product-card sale-item-container">
-              <div class="product-image">
-                <div class="sale-item">13% off</div>
-                <img src="картинки/AfricanViolet.png" alt="African Violet" />
-              </div>
-              <div class="product-info">
-                <div class="product-name">African Violet</div>
-                <div class="price-container">
-                  <div class="product-price">$199.00</div>
-                  <div class="old-price">$229.00</div>
-                </div>
-              </div>
-            </div>
-            <div class="product-card" style="margin-top: -60px">
-              <div
-                class="product-image special-image"
-                style="margin-bottom: -30px"
+
+        <div class="home-page__header-content-tablet">
+          <div class="home-page__header-top-tablet">
+            <div class="home-page__header-languages-tablet">
+              <a class="home-page__header-language" href="#">УК</a>
+              <a class="home-page__header-language" href="#">РУ</a>
+              <a
+                class="home-page__header-language home-page__header-language--active"
+                href="#"
+                >EN</a
               >
-                <img
-                  src="картинки/BeachSpiderLily.png"
-                  alt="Beach Spider Lily"
-                />
-              </div>
-              <div class="product-info">
-                <div class="product-name special-name">Beach Spider Lily</div>
-                <div class="product-price special-price">$129.00</div>
-              </div>
             </div>
-            <div class="product-card">
-              <div class="product-image">
-                <img
-                  src="картинки/BlushingBromeliad.png"
-                  alt="Blushing Bromeliad"
-                />
-              </div>
-              <div class="product-info">
-                <div class="product-name">Blushing Bromeliad</div>
-                <div class="product-price">$139.00</div>
-              </div>
+
+            <address class="home-page__header-address-tablet">
+              Kyiv, Mechnikova str, 14/1
+            </address>
+
+            <a class="home-page__header-phone-tablet" href="tel:0800211927">
+              0800 211 927
+            </a>
+
+            <a
+              class="home-page__header-social-tablet"
+              href="#"
+              aria-label="Facebook"
+            >
+              <img src="./icons/FacebookHeader.svg" alt="" />
+            </a>
+          </div>
+
+          <div class="home-page__header-container">
+            <div class="home-page__header-logo-wrapper">
+              <a
+                class="home-page__header-logo"
+                href="./index.html"
+                aria-label="HLegal — home"
+              >
+                <img src="./icons/logoHomePage.svg" alt="HLegal" />
+              </a>
             </div>
-            <div class="product-card">
-              <div class="product-image">
-                <img src="картинки/AluminumPlant.png" alt="Aluminum Plant" />
+
+            <div class="home-page__header-content">
+              <div class="home-page__header-top">
+                <div class="home-page__header-languages">
+                  <a class="home-page__header-language" href="#">УК</a>
+                  <a class="home-page__header-language" href="#">РУ</a>
+                  <a
+                    class="home-page__header-language home-page__header-language--active"
+                    href="#"
+                    >EN</a
+                  >
+                </div>
+
+                <div class="home-page__header-drawer">
+                  <button
+                    type="button"
+                    class="home-page__header-burger"
+                    commandfor="homePageDrawer"
+                    command="show-modal"
+                    aria-label="Open navigation"
+                  >
+                    <img src="./icons/home-BurgerMenu.svg" alt="" />
+                  </button>
+
+                  <dialog
+                    class="home-page__header-drawer"
+                    id="homePageDrawer"
+                    aria-label="Main navigation"
+                  >
+                    <div class="home-page__header-drawer">
+                      <button
+                        type="button"
+                        class="home-page__drawer-close"
+                        commandfor="homePageDrawer"
+                        command="close"
+                        aria-label="Close navigation"
+                      >
+                        ×
+                      </button>
+                    </div>
+
+                    <div class="home-page__header-drawer-body">
+                      <nav class="home-page__drawer-nav">
+                        <a class="home-page__drawer-link" href="./index.html"
+                          >home</a
+                        >
+                        <a class="home-page__drawer-link" href="#">services</a>
+                        <a class="home-page__drawer-link" href="./team.html"
+                          >team</a
+                        >
+                        <a class="home-page__drawer-link" href="#"
+                          >publications</a
+                        >
+                        <a class="home-page__drawer-link" href="#">contact</a>
+                      </nav>
+                    </div>
+                  </dialog>
+                </div>
+
+                <address class="home-page__header-address">
+                  Kyiv, Mechnikova str, 14/1
+                </address>
+
+                <a class="home-page__header-phone" href="tel:0800211927">
+                  0800 211 927
+                </a>
+
+                <a
+                  class="home-page__header-social"
+                  href="#"
+                  aria-label="Facebook"
+                >
+                  <img src="./icons/FacebookHeader.svg" alt="" />
+                </a>
               </div>
-              <div class="product-info">
-                <div class="product-name">Aluminum Plant</div>
-                <div class="product-price">$179.00</div>
-              </div>
-            </div>
-            <div class="product-card">
-              <div class="product-image">
-                <img src="картинки/Bird'sNestFern.png" alt="Bird's Nest Fern" />
-              </div>
-              <div class="product-info">
-                <div class="product-name">Bird's Nest Fern</div>
-                <div class="product-price">$99.00</div>
-              </div>
-            </div>
-            <div class="product-card">
-              <div class="product-image">
-                <img
-                  src="картинки/BroadleafLadyPalm.png"
-                  alt="Broadleaf Lady Palm"
-                />
-              </div>
-              <div class="product-info">
-                <div class="product-name">Broadleaf Lady Palm</div>
-                <div class="product-price">$59.00</div>
-              </div>
-            </div>
-            <div class="product-card">
-              <div class="product-image">
-                <img
-                  src="картинки/ChineseEvergreen.png"
-                  alt="Chinese Evergreen"
-                />
-              </div>
-              <div class="product-info">
-                <div class="product-name">Chinese Evergreen</div>
-                <div class="product-price">$39.00</div>
+
+              <div class="home-page__header-bottom">
+                <nav class="home-page__header-nav" aria-label="Main navigation">
+                  <a
+                    class="home-page__header-link home-page__header-link--active"
+                    href="./about-us.html"
+                    >about us</a
+                  >
+                  <a class="home-page__header-link" href="#">services</a>
+                  <a class="home-page__header-link" href="./team.html">team</a>
+                  <a class="home-page__header-link" href="#">publications</a>
+                  <a class="home-page__header-link" href="#">contact</a>
+                </nav>
               </div>
             </div>
           </div>
-          <div class="pages">
-            <p class="page active">1</p>
-            <p class="page">2</p>
-            <p class="page">3</p>
-            <p class="page">4</p>
-            <p class="page next">></p>
+        </div>
+      </header>
+
+      <!-- HOME HERO -->
+      <section class="home-hero">
+        <div class="home-hero__container">
+          <div class="home-hero__HSymbol">
+            <img src="./icons/HSymbol.svg" />
+          </div>
+          <h1 class="home-hero__title">you legal solutions provider</h1>
+
+          <a
+            class="home-hero__scroll"
+            href="#home-intro"
+            aria-label="Scroll down"
+          >
+            <span></span>
+          </a>
+        </div>
+      </section>
+
+      <!-- HOME INTRO -->
+      <section class="home-intro" id="home-intro">
+        <div class="home-intro__container">
+          <div class="home-intro__principles">
+            <ul class="home-intro__list">
+              <li class="home-intro__item home-intro__item--active">
+                Consistent
+              </li>
+              <li class="home-intro__item">Customer oriented</li>
+              <li class="home-intro__item">Innovative</li>
+              <li class="home-intro__item">Business oriented</li>
+            </ul>
+          </div>
+
+          <div class="home-intro__content">
+            <h2 class="home-intro__title">
+              We turn the idea of legal services
+            </h2>
+
+            <p class="home-intro__text">
+              Consolidating many years of experience and practice, the company's
+              lawyers accompany complex projects and achieve important decisions
+              for the industry. Many of them form the practice of applying the
+              law of the sea in Ukraine.
+            </p>
           </div>
         </div>
       </section>
+
+      <!-- SERVICES -->
+      <section class="services" id="services">
+        <div class="services__container">
+          <div class="services__heading">
+            <p class="services__label">Services ›</p>
+            <h2 class="services__title">What can we do better than others?</h2>
+          </div>
+          <div class="services__card-block">
+            <div class="services__list">
+              <article class="services__card">
+                <div class="services__image">
+                  <img
+                    class="services__icon"
+                    src="./icons/ecommerce.svg"
+                    alt=""
+                  />
+                </div>
+                <h3 class="services__card-title">IT and e-commerce</h3>
+                <p class="services__text">
+                  An endless stream of contracts, tax issues, labor relations,
+                  corporate papers - legal work distracts you from doing
+                  business. But there is not much work to do to hire an in-house
+                  lawyer.
+                </p>
+              </article>
+
+              <article class="services__card">
+                <div class="services__image">
+                  <img
+                    class="services__icon"
+                    src="./icons/support.svg"
+                    alt=""
+                  />
+                </div>
+                <h3 class="services__card-title">
+                  Comprehensive daily <br />
+                  legal support
+                </h3>
+                <p class="services__text">
+                  In addition, over time, the work will become the same type and
+                  uninteresting for a full-time lawyer. And we know very well
+                  how difficult it is to find a good candidate with experience
+                  in the field of information technology in Ukraine.
+                </p>
+              </article>
+
+              <article class="services__card">
+                <div class="services__image">
+                  <img
+                    class="services__icon"
+                    src="./icons/coprorate.svg"
+                    alt=""
+                  />
+                </div>
+                <h3 class="services__card-title">
+                  Structuring corporate <br />
+                  relationships
+                </h3>
+                <p class="services__text">
+                  Instead of just providing legal services, we will hire a
+                  lawyer or a whole team that will fit into the daily life of
+                  your company.
+                </p>
+              </article>
+
+              <article class="services__card">
+                <div class="services__image">
+                  <img class="services__icon" src="./icons/trust.svg" alt="" />
+                </div>
+                <h3 class="services__card-title">
+                  Building contractual relations
+                </h3>
+                <p class="services__text">
+                  Once a week, or week after month, you have your own lawyer by
+                  your side. Anyone in the company can catch it at the coffee
+                  maker and just talk about current affairs instead of waiting
+                  for update status.
+                </p>
+              </article>
+
+              <article class="services__card">
+                <div class="services__image">
+                  <img
+                    class="services__icon"
+                    src="./icons/protection.svg"
+                    alt=""
+                  />
+                </div>
+                <h3 class="services__card-title">
+                  Protection of business, <br />
+                  intellectual property
+                </h3>
+                <p class="services__text">
+                  And all the other time he will work on new diverse projects,
+                  so he will definitely not stop in professional development.
+                  One way or another, all Axon Partners will work for you
+                  instead of a corporate lawyer.
+                </p>
+              </article>
+
+              <article class="services__card">
+                <div class="services__image">
+                  <img
+                    class="services__icon"
+                    src="./icons/judicial.svg"
+                    alt=""
+                  />
+                </div>
+                <h3 class="services__card-title">Judicial representation</h3>
+                <p class="services__text">
+                  Is it a small, medium-sized company or a market leader? Local
+                  business or multinational company? Do you have your own legal
+                  department or not?
+                </p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TEAM SLIDER -->
+
+      <section class="home-team" id="team">
+        <div class="home-team__container">
+          <article class="home-team__slide">
+            <img
+              class="home-team__image"
+              src="./icons/TeamMember1.svg"
+              alt="Team member"
+            />
+
+            <div class="home-team__content">
+              <p class="home-team__label">Команда ›</p>
+
+              <h2 class="home-team__title">
+                Ми звикли брати на себе відповідальність та завжди гарантуємо
+                чесну, вчасну допомогу, навіть у ситуаціях, коли більшість
+                безсилі.
+              </h2>
+
+              <p class="home-team__name">Олександр Олександровський</p>
+
+              <p class="home-team__position">Керуючий партнер</p>
+            </div>
+          </article>
+        </div>
+        <div class="achievements__dots">
+          <span class="achievements__dot"></span>
+          <span class="achievements__dot"></span>
+          <span class="achievements__dot"></span>
+        </div>
+      </section>
+
+      <!-- CLIENTS -->
+      <section class="clients">
+        <h2 class="clients__title">They already trust us</h2>
+
+        <div class="clients__list">
+          <a href="#" class="clients__item1"
+            ><img src="./icons/client1.svg" alt="Hillel"
+          /></a>
+          <a href="#" class="clients__item2"
+            ><img src="./icons/client2.svg" alt="WannaBiz"
+          /></a>
+          <a href="#" class="clients__item3"
+            ><img src="./icons/client3.svg" alt="Tapgerine"
+          /></a>
+          <a href="#" class="clients__item4"
+            ><img src="./icons/client4.svg" alt="3D LOOK"
+          /></a>
+          <a href="#" class="clients__item5"
+            ><img src="./icons/client5.svg" alt="Orangear"
+          /></a>
+          <a href="#" class="clients__item6"
+            ><img src="./icons/client6.svg" alt="Adtelligent"
+          /></a>
+          <a href="#" class="clients__item7"
+            ><img src="./icons/client7.svg" alt="Clickky"
+          /></a>
+          <a href="#" class="clients__item8"
+            ><img src="./icons/client8.svg" alt="Eco Leasing"
+          /></a>
+          <a href="#" class="clients__item9"
+            ><img src="./icons/client9.svg" alt="InfraTek"
+          /></a>
+          <a href="#" class="clients__item10"
+            ><img src="./icons/client10.svg" alt="Сити парк"
+          /></a>
+          <a href="#" class="clients__item11"
+            ><img src="./icons/client11.svg" alt="Art-print studio"
+          /></a>
+          <a href="#" class="clients__item12"
+            ><img src="./icons/client12.svg" alt="Ultimate Card"
+          /></a>
+        </div>
+      </section>
+
+      <!-- PUBLICATIONS -->
+      <section class="publications" id="publications">
+        <div class="publications__container">
+          <div class="publications__heading">
+            <p class="publications__label">Publications ›</p>
+            <h2 class="publications__title">We have something to tell</h2>
+          </div>
+
+          <div class="publications__list">
+            <article class="publications__card">
+              <img
+                class="publications__image"
+                src="./icons/publication1.svg"
+                alt=""
+              />
+
+              <div class="publications__content">
+                <h3 class="publications__card-title">Equity associate</h3>
+                <time class="publications__date" datetime="2021-04-22"
+                  >April 22</time
+                >
+                <p class="publications__text">
+                  I'm a junior on projects. I am a co-owner of a law firm. How
+                  it happened. Before entering my parents told me that if I...
+                </p>
+              </div>
+            </article>
+
+            <article class="publications__card">
+              <img
+                class="publications__image"
+                src="./icons/publication2.svg"
+                alt=""
+              />
+
+              <div class="publications__content">
+                <h3 class="publications__card-title">
+                  Penalty for the Good Corporation: what will happen to Google
+                  and others for violating the GDPR
+                </h3>
+                <time class="publications__date" datetime="2021-09-29"
+                  >September 29</time
+                >
+                <p class="publications__text">
+                  And why the recovery of 50 million euros could be a fateful
+                  precedent according to the National Commission for Data
+                  Protection.
+                </p>
+              </div>
+            </article>
+
+            <article class="publications__card">
+              <img
+                class="publications__image"
+                src="./icons/publication3.svg"
+                alt=""
+              />
+
+              <div class="publications__content">
+                <h3 class="publications__card-title">Millennial Testament</h3>
+                <time class="publications__date" datetime="2021-08-19"
+                  >August 19</time
+                >
+                <p class="publications__text">
+                  How and how modern vloggers, opinion leaders and
+                  crypto-millionaires will inherit a typical legacy of the
+                  Ukrainian generation.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- END HOME PAGE -->
+
+      <!-- FOOTER -->
+      <footer class="footer">
+        <div class="footer__contacts">
+          <div class="footer__address-row">
+            <p class="footer__address">Kyiv, Mechnikova str, 14/1</p>
+            <p class="footer__map">On map</p>
+          </div>
+          <div class="footer__links-row">
+            <img class="footer__icon" src="./icons/FacebookFooter.svg" />
+            <p class="footer__number">0800 211 927</p>
+            <p class="footer__email">contact@forstudy.space</p>
+          </div>
+        </div>
+        <p class="footer__copyright">© 2021 HLEGAL Law company, LLC</p>
+      </footer>
+
+      <script
+        type="module"
+        src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL"
+        crossorigin="anonymous"
+      ></script>
     </main>
-
-    <!-- section -->
-
-    <div class="main">
-      <section class="offers">
-        <div class="offer">
-          <div class="offer-image">
-            <img src="картинки/Summer cactus & succulents.png" alt="Plant" />
-          </div>
-          <div class="offer-info">
-            <h2 class="offer-title">
-              SUMMER CACTUS
-              <br />
-              & SUCCULENTS
-            </h2>
-            <p class="offer-text">
-              We are an online plant shop offering a wide range of cheap and
-              trendy plants
-            </p>
-            <button class="offer-button">Find More →</button>
-          </div>
-        </div>
-        <div class="offer">
-          <div class="offer-image">
-            <img src="картинки/Styling Trends & much more.png" alt="Plant" />
-          </div>
-          <div class="offer-info">
-            <h2 class="offer-title">
-              STYLING TRENDS
-              <br />
-              & MUCH MORE
-            </h2>
-            <p class="offer-text">
-              We are an online plant shop offering a wide range of cheap and
-              trendy plants
-            </p>
-            <button class="offer-button">Find More →</button>
-          </div>
-        </div>
-      </section>
-      <section class="blog">
-        <div class="blog-header">
-          <h1 class="blog-main-title">Our Blog Posts</h1>
-          <p class="blog-subtitle">
-            We are an online plant shop offering a wide range of cheap and
-            trendy plants.
-          </p>
-        </div>
-        <div class="blog-content">
-          <div class="blog-card">
-            <div class="blog-image">
-              <img
-                src="картинки/Cactus & Succulent Care Tips.png"
-                alt="Cactus and Succulent"
-              />
-            </div>
-            <div class="blog-info">
-              <div class="blog-info-text-container">
-                <p class="blog-date">September 12 | Read in 6 minutes</p>
-                <h2 class="blog-title">
-                  Cactus & Succulent
-                  <br />
-                  Care Tips
-                </h2>
-                <p class="blog-text">
-                  Cacti and succulents are easy to care for plants for any home
-                  or patio.
-                </p>
-              </div>
-              <p class="blog-link">Read More →</p>
-            </div>
-          </div>
-          <div class="blog-card">
-            <div class="blog-image">
-              <img
-                src="картинки/Top 10 Succulents for Your Home.png"
-                alt="Succulents"
-              />
-            </div>
-            <div class="blog-info">
-              <div class="blog-info-text-container">
-                <p class="blog-date">September 13 | Read in 2 minutes</p>
-
-                <h2 class="blog-title">Top 10 Succulents for Your Home</h2>
-                <p class="blog-text">
-                  Best in hanging baskets. Prefers medium to high light.
-                </p>
-              </div>
-              <p class="blog-link">Read More →</p>
-            </div>
-          </div>
-          <div class="blog-card">
-            <div class="blog-image">
-              <img
-                src="картинки/Cacti & Succulent Care Tips.png"
-                alt="Cacti and Succulent Care"
-              />
-            </div>
-            <div class="blog-info">
-              <div class="blog-info-text-container">
-                <p class="blog-date">September 15 | Read in 3 minutes</p>
-                <h2 class="blog-title">
-                  Cacti & Succulent
-                  <br />
-                  Care Tips
-                </h2>
-                <p class="blog-text">
-                  Cacti and succulents thrive in containers and because most
-                  are...
-                </p>
-              </div>
-              <p class="blog-link">Read More →</p>
-            </div>
-          </div>
-          <div class="blog-card">
-            <div class="blog-image">
-              <img
-                src="картинки/Best Houseplants Room by Room.png"
-                alt="Houseplants"
-              />
-            </div>
-            <div class="blog-info">
-              <div class="blog-info-text-container">
-                <p class="blog-date">September 15 | Read in 2 minutes</p>
-                <h2 class="blog-title">
-                  Best Houseplants
-                  <br />
-                  Room By Room
-                </h2>
-                <p class="blog-text">
-                  The benefits of houseplants are endless. In addition to...
-                </p>
-              </div>
-              <p class="blog-link">Read More →</p>
-            </div>
-          </div>
-        </div>
-      </section>
-    </div>
-
-    <!-- footer -->
-
-    <section class="features">
-      <div class="feature">
-        <div class="feature-img garden-care"></div>
-        <h3>Garden Care</h3>
-        <p>
-          We are an online plant shop offering a wide range of cheap and trendy
-          plants.
-        </p>
-      </div>
-      <div class="feature">
-        <div class="feature-img plant-renovation"></div>
-        <h3>Plant Renovation</h3>
-        <p>
-          We are an online plant shop offering a wide range of cheap and trendy
-          plants.
-        </p>
-      </div>
-      <div class="feature">
-        <div class="feature-img watering-garden"></div>
-        <h3>Watering Garden</h3>
-        <p>
-          We are an online plant shop offering a wide range of cheap and trendy
-          plants.
-        </p>
-      </div>
-      <div class="newsletter">
-        <h3>Would you like to join newsletters?</h3>
-        <div class="subscribe">
-          <input type="email" placeholder="enter your email address..." />
-          <button>Join</button>
-        </div>
-        <p>
-          We usually post offers and challenges in newsletter. We're your online
-          houseplant destination. We offer a wide range of houseplants and
-          accessories shipped directly from our (green)house to yours!
-        </p>
-      </div>
-    </section>
-    <footer>
-      <div class="footer-contact">
-        <div class="logo">
-          <div class="logo-icon"></div>
-          <span>GREENSHOP</span>
-        </div>
-        <div class="contact-item">
-          <div class="contact-icon location-icon"></div>
-          <span>
-            70 West Buckingham Ave.<br />
-            Farmingdale, NY 11735
-          </span>
-        </div>
-        <div class="contact-item">
-          <div class="contact-icon email-icon"></div>
-          <span>contact@greenshop.com</span>
-        </div>
-        <div class="contact-item">
-          <div class="contact-icon phone-icon"></div>
-          <span>+88 01911 717 490</span>
-        </div>
-      </div>
-      <div class="footer-links">
-        <div class="footer-column">
-          <h3>My Account</h3>
-          <a class="footer-a" href="#">My Account</a>
-          <a class="footer-a" href="#">Our stores</a>
-          <a class="footer-a" href="#">Contact us</a>
-          <a class="footer-a" href="#">Career</a>
-          <a class="footer-a" href="#">Specials</a>
-        </div>
-        <div class="footer-column">
-          <h3>Help & Guide</h3>
-          <a class="footer-a" href="#">Help Center</a>
-          <a class="footer-a" href="#">How to Buy</a>
-          <a class="footer-a" href="#">Shipping & Delivery</a>
-          <a class="footer-a" href="#">Product Policy</a>
-          <a class="footer-a" href="#">How to Return</a>
-        </div>
-        <div class="footer-column">
-          <h3>Categories</h3>
-          <a class="footer-a" href="#">House Plants</a>
-          <a class="footer-a" href="#">Potter Plants</a>
-          <a class="footer-a" href="#">Seeds</a>
-          <a class="footer-a" href="#">Small Plants</a>
-          <a class="footer-a" href="#">Accessories</a>
-        </div>
-        <div class="footer-column social-column">
-          <h3>Social Media</h3>
-          <div class="socials">
-            <div class="social">
-              <a href="#" class="facebook"></a>
-            </div>
-            <div class="social">
-              <a href="#" class="instagram"></a>
-            </div>
-            <div class="social">
-              <a href="#" class="twitter"></a>
-            </div>
-            <div class="social">
-              <a href="#" class="linkedin"></a>
-            </div>
-            <div class="social">
-              <a href="#" class="youtube"></a>
-            </div>
-          </div>
-          <div class="payment-block">
-            <h3 class="accept-title">We accept</h3>
-            <div class="payments"></div>
-          </div>
-        </div>
-      </div>
-      <div class="copyright">© 2021 GreenShop. All Rights Reserved.</div>
-    </footer>
   </body>
 </html>

@@ -1,0 +1,269 @@
+@use "variables" as *;
+
+.home-page__header {
+  padding: 50px 0 0;
+  font-family: $font-main;
+  background-color: $color-main;
+
+  &-container {
+    margin: 0 auto;
+    padding: 0 160px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+    padding-bottom: 60px;
+    max-width: $max-width-container;
+  }
+
+  &-languages-contact {
+    display: none;
+  }
+
+  &-logo-wrapper {
+    display: flex;
+    align-items: flex-start;
+    gap: 4px;
+  }
+
+  &-logo img {
+    display: block;
+    width: 130px;
+    height: auto;
+  }
+
+  &-slash {
+    display: block;
+    width: 21px;
+    height: 47px;
+  }
+
+  &-section {
+    font-size: 36px;
+    line-height: 100%;
+    color: $color-main;
+  }
+
+  &-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 16px;
+  }
+
+  &-top {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    font-size: 12px;
+  }
+
+  &-top-tablet {
+    display: none;
+  }
+
+  &-languages {
+    display: flex;
+    gap: 4px;
+  }
+
+  &-language {
+    padding: 5px 7px;
+    border-radius: 8px;
+    color: $color-text;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 12px;
+    transition: background-color 0.2s ease;
+
+    &:hover {
+      background-color: #f5f5fa;
+    }
+
+    &--active {
+      background-color: $color-accent;
+      color: $color-white;
+    }
+  }
+
+  &-address,
+  &-phone {
+    color: white;
+    font-style: normal;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 0;
+  }
+
+  &-phone {
+    font-weight: 700;
+  }
+
+  &-social img {
+    display: block;
+    width: 24px;
+    height: 24px;
+  }
+
+  &-nav {
+    display: flex;
+    gap: 15px;
+    font-size: 16px;
+  }
+
+  &-link {
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+
+    padding-bottom: 3px;
+    transition:
+      color 0.2s ease,
+      border-color 0.2s ease;
+
+    &:hover {
+      color: $color-accent;
+    }
+
+    &-menu {
+      display: none;
+      border: none;
+      background: transparent;
+      cursor: pointer;
+    }
+
+    &-drawer {
+      display: none;
+    }
+  }
+
+  &-burger {
+    background-color: $color-main;
+    border: 0;
+    display: none;
+  }
+}
+.btn-solid {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .home-page__header {
+    &-container {
+      padding: 0 15px;
+      margin: 0;
+    }
+
+    &-slash {
+      width: 12px;
+      height: 26px;
+    }
+
+    &-logo img {
+      width: 69px;
+      height: 32px;
+    }
+
+    &-section {
+      font-size: 20px;
+    }
+
+    &-content {
+      display: none;
+    }
+
+    &-adress-tablet &-languages-mobile {
+      display: block;
+      background-color: $color-background;
+      padding: 10px 15px;
+      display: flex;
+      justify-content: space-between;
+      position: relative;
+    }
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 0;
+
+    &-menu {
+      display: block;
+    }
+
+    &-top {
+      display: block;
+    }
+
+    &__drawer {
+      display: none;
+    }
+
+    &-burger {
+      display: block;
+    }
+
+    &-phone {
+      display: block;
+      position: relative;
+    }
+  }
+  .btn-solid {
+    display: none;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 1024px) {
+  .home-page__header {
+    &-container {
+      flex-direction: column;
+      padding: 0 0 0 6px;
+      margin: 0;
+    }
+
+    &-languages-contact {
+      display: none;
+    }
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 50px 0 60px 60px;
+    margin: 0;
+    position: relative;
+
+    &-top {
+      display: none;
+    }
+
+    &-content-tablet {
+      flex-direction: column;
+      display: flex;
+
+      gap: 18px;
+      font-size: 12px;
+    }
+
+    &-top-tablet {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      font-size: 12px;
+    }
+
+    &-address-tablet,
+    &-phone-tablet {
+      color: $color-text;
+      font-style: normal;
+      text-decoration: none;
+      font-size: 16px;
+      margin: 0;
+    }
+
+    &-drawer {
+      display: none;
+    }
+    &-burger {
+      display: none;
+    }
+  }
+}

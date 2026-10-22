@@ -1,0 +1,19 @@
+@use "variables" as *;
+@use "header";
+@use "about";
+@use "team-banner";
+@use "quality";
+@use "achievements";
+@use "footer";
+@use "team";
+@use "home-header";
+@use "home-hero";
+@use "home-intro";
+@use "home-services";
+@use "home-team";
+@use "home-clients";
+@use "home-publications";
+
+p {
+  font-size: 19px;
+}

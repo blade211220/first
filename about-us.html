@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HLegal — About Us</title>
+    <link rel="stylesheet" href="./scss/style.css" />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <main class="main">
+      <header class="header">
+        <div class="header__languages__contact">
+          <div class="header__languages__mobile">
+            <a class="header__language" href="#">УК</a>
+            <a class="header__language" href="#">РУ</a>
+            <a class="header__language header__language--active" href="#">EN</a>
+          </div>
+          <a class="header__phone" href="tel:0800211927"> 0800 211 927 </a>
+        </div>
+
+        <div class="header__content__tablet">
+          <div class="header__top__tablet">
+            <div class="header__languages__tablet">
+              <a class="header__language" href="#">УК</a>
+              <a class="header__language" href="#">РУ</a>
+              <a class="header__language header__language--active" href="#"
+                >EN</a
+              >
+            </div>
+            <address class="header__address__tablet">
+              Kyiv, Mechnikova str, 14/1
+            </address>
+            <a class="header__phone__tablet" href="tel:0800211927">
+              0800 211 927
+            </a>
+            <a class="header__social__tablet" href="#" aria-label="Facebook">
+              <img src="./icons/FacebookHeader.svg" alt="" />
+            </a>
+          </div>
+
+          <div class="header__container">
+            <div class="header__logo-wrapper">
+              <a class="header__logo" href="#" aria-label="HLegal — home">
+                <img src="./icons/logoHlegal.svg" alt="HLegal" />
+              </a>
+
+              <img class="header__slash" src="./icons/slash.svg" alt="HLegal" />
+              <span class="header__section">about us</span>
+            </div>
+
+            <div class="header__content">
+              <div class="header__top">
+                <div class="header__languages">
+                  <a class="header__language" href="#">УК</a>
+                  <a class="header__language" href="#">РУ</a>
+                  <a class="header__language header__language--active" href="#"
+                    >EN</a
+                  >
+                </div>
+
+                <div class="header__drawer">
+                  <button
+                    type="button"
+                    class="btn-solid"
+                    commandfor="invokerDrawer"
+                    command="show-modal"
+                  >
+                    <svg
+                      width="32"
+                      height="32"
+                      viewBox="0 0 32 32"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M7 10H25" stroke="#323264" stroke-width="2" />
+                      <path d="M7 16H25" stroke="#323264" stroke-width="2" />
+                      <path d="M7 22H25" stroke="#323264" stroke-width="2" />
+                    </svg>
+                  </button>
+
+                  <dialog
+                    class="drawer drawer-start"
+                    tabindex="-1"
+                    id="invokerDrawer"
+                    aria-labelledby="invokerDrawerLabel"
+                  >
+                    <div class="drawer-header">
+                      <button
+                        type="button"
+                        class="btn-close"
+                        commandfor="invokerDrawer"
+                        command="close"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="drawer-body">
+                      <ul>
+                        <li><a href="./about-us.html"> about us </a></li>
+                        <li>services</li>
+                        <li><a href="./team.html">team</a></li>
+                        <li>publications</li>
+                        <li>contact</li>
+                      </ul>
+                    </div>
+                  </dialog>
+                </div>
+
+                <address class="header__address">
+                  Kyiv, Mechnikova str, 14/1
+                </address>
+                <a class="header__phone" href="tel:0800211927">
+                  0800 211 927
+                </a>
+                <a class="header__social" href="#" aria-label="Facebook">
+                  <img src="./icons/FacebookHeader.svg" alt="" />
+                </a>
+              </div>
+              <div class="header__bottom">
+                <nav class="header__nav" aria-label="Main navigation">
+                  <a class="header__link header__link--active" href="#"
+                    >about us</a
+                  >
+                  <a class="header__link" href="#">services</a>
+                  <a class="header__link" href="./team.html">team</a>
+                  <a class="header__link" href="#">publications</a>
+                  <a class="header__link" href="#">contact</a>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <section class="about">
+        <div class="about__content">
+          <div class="about__text">
+            <h1 class="about__title">
+              We turn over the idea of legal services
+            </h1>
+            <p class="about__paragraph">
+              Consolidating many years of experience and practice, the company's
+              lawyers accompany complex projects and achieve the adoption of a
+              number of decisions that are important for the industry. Many
+              people form the practice of applying the law of the sea in
+              Ukraine.
+            </p>
+            <p class="about__paragraph">
+              HLEGAL is a reliable business partner, confirmed by stable
+              cooperation with international law firms, the trust of large
+              Ukrainian and international companies, and the recognition of
+              professional ratings.
+            </p>
+          </div>
+          <div class="about__stats">
+            <div class="about__stat">
+              <div class="about__stat-header">
+                <img src="./icons/experience.svg" />
+                <h2 class="about__stat-title">10+</h2>
+              </div>
+              <p class="about__stat-text">years of relevant experience</p>
+            </div>
+
+            <div class="about__stat">
+              <div class="about__stat-header">
+                <img src="./icons/clients.svg" />
+                <h2 class="about__stat-title">30+</h2>
+              </div>
+              <p class="about__stat-text">
+                active clients who entrust us with their orders
+              </p>
+            </div>
+            <div class="about__stat">
+              <div class="about__stat-header">
+                <img src="./icons/probono.svg" />
+                <h2 class="about__stat-title">500+</h2>
+              </div>
+              <p class="about__stat-text">hours of pro bono work annually</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="team-banner">
+        <h2 class="team-banner__title">TEAM</h2>
+      </section>
+      <section class="quality">
+        <div class="quality__text">
+          <p class="quality__paragraph">
+            The historically unchanged legal profession has begun to reformat in
+            recent years. Clients are feeling this, but law firms are still
+            resisting evolution. Clients need convenience, simplicity,
+            transparent payment. Google, IBM WatsOn, Symantec Clearwell prove
+            that the technological revolution in legal services has begun and is
+            imminent.
+          </p>
+          <p class="quality__paragraph">
+            Quality is what we care about the most.
+          </p>
+          <p class="quality__paragraph">
+            It's simple. If you are unhappy with our work, we will refund your
+            money. We trust our clients. And we want our clients to trust us
+            too.
+          </p>
+        </div>
+        <h2 class="quality__title">Quality is what we care about the most.</h2>
+      </section>
+      <section class="achievements">
+        <h2 class="achievements__title">Achievements</h2>
+        <div class="achievements__images">
+          <img
+            class="achievements__image1"
+            src="./icons/Achievement-1.svg"
+            alt="Achievement"
+          />
+          <img
+            class="achievements__image2"
+            src="./icons/Achievement-2.svg"
+            alt="Achievement"
+          />
+          <img
+            class="achievements__image3"
+            src="./icons/Achievement-3.svg"
+            alt="Achievement"
+          />
+          <img
+            class="achievements__image4"
+            src="./icons/Achievement-4.svg"
+            alt="Achievement"
+          />
+        </div>
+        <div class="achievements__dots">
+          <span class="achievements__dot"></span>
+          <span class="achievements__dot"></span>
+          <span class="achievements__dot"></span>
+          <span class="achievements__dot__mobile"></span>
+          <span class="achievements__dot__mobile"></span>
+          <span class="achievements__dot__mobile"></span>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="footer__contacts">
+          <div class="footer__address-row">
+            <p class="footer__address">Kyiv, Mechnikova str, 14/1</p>
+            <p class="footer__map">On map</p>
+          </div>
+          <div class="footer__links-row">
+            <img class="footer__icon" src="./icons/FacebookFooter.svg" />
+            <p class="footer__number">0800 211 927</p>
+            <p class="footer__email">contact@forstudy.space</p>
+          </div>
+        </div>
+        <p class="footer__copyright">© 2021 HLEGAL Law company, LLC</p>
+      </footer>
+    </main>
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

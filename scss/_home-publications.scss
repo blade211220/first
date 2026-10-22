@@ -1,0 +1,164 @@
+@use "variables" as *;
+
+.publications {
+  background-color: $color-background;
+  padding: 30px 160px;
+
+  &__title {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 100%;
+    background-image: linear-gradient(to right, $color-accent, #ef8080);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0;
+  }
+
+  &__label {
+    padding-bottom: 10px;
+    margin: 0;
+    color: $regular-blue;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 100%;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+
+    &:hover {
+      color: $color-accent;
+    }
+  }
+
+  &__heading {
+    margin-bottom: 30px;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    gap: 30px;
+  }
+
+  &__card {
+    display: flex;
+    flex: 1 1 calc(33.333% - 20px);
+    flex-direction: column;
+    min-width: 0;
+    overflow: hidden;
+    border-radius: 8px;
+    background-color: $color-white;
+  }
+
+  &__image {
+    display: block;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  &__content {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 30px;
+  }
+
+  &__card-title {
+    margin: 0 0 15px;
+    color: $regular-blue;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.25;
+  }
+
+  &__date {
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 4px solid $color-separator;
+    color: $color-text;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    margin: 0;
+    color: #000;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.55;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 1024px) {
+  .publications {
+    padding: 50px 30px;
+
+    &__title {
+      font-size: 32px;
+    }
+
+    &__list {
+      gap: 20px;
+    }
+
+    &__card {
+      max-width: 280px;
+    }
+
+    &__image {
+      height: 200px;
+      width: 281px;
+    }
+
+    &__content {
+      padding: 25px;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .publications {
+    padding: 30px 15px;
+
+    &__heading {
+      padding-bottom: 20px;
+    }
+
+    &__title {
+      font-size: 30px;
+    }
+
+    &__list {
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    &__card,
+    &__card:last-child {
+      flex: 1 1 auto;
+      width: 100%;
+    }
+
+    &__image {
+      height: 200px;
+    }
+
+    &__content {
+      padding: 20px;
+    }
+
+    &__card-title {
+      font-size: 16px;
+    }
+  }
+}

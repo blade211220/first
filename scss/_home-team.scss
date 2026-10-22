@@ -1,0 +1,154 @@
+@use "variables" as *;
+
+.home-team {
+  padding: 80px 160px 60px 160px;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    border-radius: 12px;
+  }
+
+  &__slide {
+    display: flex;
+    border-radius: 12px;
+    background-color: $color-background;
+  }
+
+  &__image {
+    display: block;
+    border-radius: 12px;
+  }
+
+  &__content {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 30px;
+    max-width: 920px;
+  }
+
+  &__label {
+    margin: 0 0 10px;
+    color: $regular-blue;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  &__title {
+    padding-bottom: 30px;
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 100%;
+    background-image: linear-gradient(to right, $color-accent, #ef8080);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0;
+    max-width: 1000px;
+  }
+
+  &__name {
+    padding-bottom: 6px;
+    color: $color-text;
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  &__position {
+    margin: 0;
+    color: $color-text;
+    font-size: 14px;
+  }
+}
+
+.achievements {
+  &__dots {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 30px;
+  }
+
+  &__dot {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: $regular-blue;
+    opacity: 0.2;
+    cursor: pointer;
+
+    &:first-child {
+      opacity: 1;
+    }
+
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+}
+
+@media (min-width: 600px) and (max-width: 1024px) {
+  .home-team {
+    padding: 40px 30px 25px;
+
+    &__image {
+      width: 35%;
+      min-width: 250px;
+    }
+
+    &__content {
+      padding: 25px;
+    }
+
+    &__title {
+      font-size: 26px;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .home-team {
+    padding: 30px 15px 20px;
+
+    &__slide {
+      flex-direction: column;
+    }
+
+    &__image {
+      width: 100%;
+      min-width: 0;
+      height: 300px;
+      object-position: center 30%;
+    }
+
+    &__content {
+      padding: 25px;
+    }
+
+    &__title {
+      margin-bottom: 25px;
+      font-size: 22px;
+    }
+
+    &__name {
+      margin-top: 0;
+    }
+  }
+
+  .achievements {
+    &__dots {
+      gap: 10px;
+      margin-top: 20px;
+    }
+
+    &__dot {
+      width: 12px;
+      height: 12px;
+    }
+  }
+}

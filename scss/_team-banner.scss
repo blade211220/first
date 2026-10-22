@@ -1,0 +1,36 @@
+@use "variables" as *;
+.team-banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 438px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  background-image:
+    linear-gradient(to right, rgba(50, 50, 100, 0.5), rgba(240, 20, 50, 0.5)),
+    url("../картинки/Team.png");
+
+  &__title {
+    margin: 0;
+    font-family: $font-main;
+    font-size: 96px;
+    font-weight: 700;
+    line-height: 100%;
+    letter-spacing: 63px;
+    color: $color-white;
+    text-transform: uppercase;
+    opacity: 0.8;
+  }
+}
+
+@media (max-width: 600px) {
+  .team-banner {
+    height: 114px;
+    &__title {
+      font-size: 36px;
+      letter-spacing: 13px;
+    }
+  }
+}
